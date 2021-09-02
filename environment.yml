@@ -1,0 +1,21 @@
+name: null
+
+channels:
+  - conda-forge
+  - defaults
+
+dependencies:
+  - cudatoolkit-dev=10.0=py36_0
+  - cudnn=7.6
+  - cupti=10.0
+  - cxx-compiler=1.1
+  - jupyterlab=2.2
+  - mpi4py=3.0 # installs cuda-aware openmpi
+  - nccl=2.4
+  - nodejs=14
+  - pip=20.1
+  - pip:
+    - -r file:requirements.txt
+  - python=3.6
+  - tensorboard=1.15
+  - tensorflow-gpu=1.15
